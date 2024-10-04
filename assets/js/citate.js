@@ -5,16 +5,16 @@ const arrowDown = document.getElementById('arrow-down');
 
 // Load the JSON data
 const jsonData = [
-    {
-        "fio": "Эдвард Стенли, режиссер, актер, сценарист",
-        "avatar": "./assets/images/Edvard_Stenli.jpg",
-        "quote": "«Те, кто не могут найти время для тренировок, придется искать время для того, чтобы болеть!»"
-      },
-      {
-        "fio": "Винсент Ломбарди - тренер",
-        "avatar": "./assets/images/Vince-Lombardi.jpg",
-        "quote": "«Бог дал вам тело, которое может вынести почти все! Ваша задача – убедить в этом свой разум!»"
-      }
+  {
+    "fio": "Эдвард Стенли, режиссер, актер, сценарист",
+    "avatar": "./assets/images/Edvard_Stenli.jpg",
+    "quote": "«Те, кто не могут найти время для тренировок, придется искать время для того, чтобы болеть!»"
+  },
+  {
+    "fio": "Винсент Ломбарди - тренер",
+    "avatar": "./assets/images/Vince-Lombardi.jpg",
+    "quote": "«Бог дал вам тело, которое может вынести почти все! Ваша задача – убедить в этом свой разум!»"
+  }
 ]; // replace with your JSON data
 
 // Initialize the current index
@@ -24,9 +24,9 @@ let currentIndex = 0;
 function displayQuote() {
   const currentData = jsonData[currentIndex];
   quoteBlock.innerHTML = `
-    <img src="${currentData.avatar}" alt="${currentData.fio}">
-    <blockquote>${currentData.quote}</blockquote>
-    <p>${currentData.fio}</p>
+    <img class="quote-block__avatar" src="${currentData.avatar}" alt="${currentData.fio}">
+    <blockquote class="quote-block__quote">${currentData.quote}</blockquote>
+    <p class="quote-block__author">${currentData.fio}</p>
   `;
 }
 

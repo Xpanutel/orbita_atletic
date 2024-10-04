@@ -1258,3 +1258,75 @@ responsive
   }
 }
 
+.quotes {
+  position: relative;
+}
+
+.quotes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(35, 45, 57, 0.8);
+}
+
+.quote-block {
+}
+
+.quote-block__avatar {
+}
+
+.quote-block__quote {
+  margin-top: 15px;
+
+  font-size: clamp(20px, 12.1569px + 2.0915vw, 36px); /* 375 x 1140 */
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.quote-block__author {
+  font-size: clamp(12px, 10.0392px + 0.5229vw, 16px); /* 375 x 1140 */
+  color: #fff;
+  margin: 0.9375em 0px 1.5625em 0px; /* 15 x 25 */
+}
+
+.quotes__slider-btn {
+  padding: 0;
+  background: none;
+  border: none;
+
+  transition: opacity 0.33s ease;
+}
+
+@media (any-hover: hover) {
+  .quotes__slider-btn:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (any-hover: none) {
+  .quotes__slider-btn:active {
+    opacity: 0.5;
+  }
+}
+
+.quotes__slider-btn:focus {
+  outline: none;
+}
+
+.quotes__slider-btn img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 575.98px) {
+  .quotes__slider-btn {
+    max-width: 30px;
+  }
+}
