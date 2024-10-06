@@ -1348,3 +1348,15 @@ responsive
     max-width: 30px;
   }
 }
+
+@media (max-width: 767.98px) {
+  .schedule-table {
+    overflow: auto;
+    margin: 0 -15px;
+    padding: 0 15px;
+  }
+
+  #schedule table {
+    width: 510px;
+  }
+}
